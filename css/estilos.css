@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Canvas de partículas detrás del contenido */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at top, #00000011, #0a0a0a 80%);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff, 0 0 30px #00eaff;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+    font-size: 1.3rem;
+    color: #b3faff;
+}
+
+
+
+.hero .hero-content p {
+    font-size: 1.3rem !important; /* Aumenta el tamaño del párrafo y fuerza prioridad */
+}
+
+.btn {
+    background: #00eaff;
+    padding: 10px 25px;
+    border: none;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00eaff, 0 0 30px #00eaff;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00c6d9;
+    box-shadow: 0 0 25px #00eaff, 0 0 50px #00eaff;
+}
+
+/* COLECCIÓN */
+.collection {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.collection h2 {
+    color: #00eaff;
+    margin-bottom: 30px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+}
+
+.card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff;
+}
+
+/* EXPERIENCIA */
+.experience {
+    padding: 60px 20px;
+    background: #111;
+    text-align: center;
+}
+
+.experience h2 {
+    color: #00eaff;
+    margin-bottom: 15px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+
+
+.experience p {
+    font-size: 1.15rem; /* Mantiene el tamaño aumentado */
+    line-height: 1.8; 
+    margin-bottom: 25px; /* Añade espacio inferior para separar de los botones */
+}
+
+
+
+
+/* CTA */
+.cta {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.cta input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.cta button {
+    border-radius: 25px;
+}
+
+#btn-suscribir {
+    font-size: 1.3rem; /* Aumenta el tamaño del texto */
+    padding: 15px 35px; /* Más grande en alto y ancho */
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #0a0a0a;
+    font-size: 1.3rem;
+    color: #888;
+}
+
+
+
+
+
+/* WhatsApp futurista - Azul Royal */
+.whatsapp-contact {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.whatsapp-contact a {
+    color: #1e90ff; /* Azul royal */
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 2px solid #1e90ff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #1e90ff, 0 0 30px #1e90ff inset;
+    transition: 0.3s;
+}
+
+.whatsapp-contact a:hover {
+    background: #1e90ff;
+    color: #0a0a0a;
+    box-shadow: 0 0 25px #1e90ff, 0 0 50px #1e90ff;
+}
+
+.whatsapp-contact i {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* Ajustes generales para hacer toda la página responsiva */
+@media (max-width: 1024px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .card img {
+        max-width: px;
+    }
+}
+
+
+
